@@ -33,13 +33,13 @@ This is the actionable checklist to review a WordPress theme on [WordPress.org](
 
 ## Core Functionality and Features
 
-- [ ] Use WordPress functionality and features first, if available.
+- [ ] Use [WordPress functionality and features first, if available](https://make.wordpress.org/themes/handbook/review/wordpress-functionality-and-features/).
 - [ ] Don’t include admin/feature pointers.
 - [ ] No custom post types and no custom taxonomies.
 - [ ] No pay wall restricting any WordPress feature.
 - [ ] No disabling of the admin tool bar.
-- [ ] Use `get_template_directory()` rather than `TEMPLATEPATH` to return the template path.
-- [ ] Use `get_stylesheet_directory()` rather than `STYLESHEETPATH` to return the stylesheet path.
+- [ ] Use [get_template_directory()](https://developer.wordpress.org/reference/functions/get_template_directory/) rather than `TEMPLATEPATH` to return the template path.
+- [ ] Use [get_stylesheet_directory()](https://developer.wordpress.org/reference/functions/get_stylesheet_directory/) rather than `STYLESHEETPATH` to return the stylesheet path.
 - [ ] Avoid hard coding to modify content. Instead, use function parameters, filters and action hooks where appropriate. For  example wp_title should be modified using a filter.
 - [ ] Able to have child themes made from them.
 - [ ] Include comments_template().
@@ -70,11 +70,11 @@ This is the actionable checklist to review a WordPress theme on [WordPress.org](
 ## Options and Settings
 
 - [ ] Save options in a single array.
-- [ ] Use sane defaults and don’t write default setting values to the database.
+- [ ] Use [sane defaults](https://make.wordpress.org/themes/2014/07/09/using-sane-defaults-in-themes/) and don’t write default setting values to the database.
 - [ ] Use edit_theme_options capability for add_theme_page(), rather than rely on a role (e.g. “administrator”), or a different capability (e.g. “edit_themes”, “manage_options”) for the capability to add the settings page.
 - [ ] If using a theme options page, add it to the ‘Appearance’ menu.
 - [ ] Use either the Settings API or the Customizer for implementing theme options.
-- [ ] Prefix all options, custom functions, custom global variables and custom constants with the theme-slug.
+- [ ] Prefix all options, custom functions, custom [global variables](http://php.net/manual/en/language.variables.scope.php) and custom constants with the theme-slug.
 
 ## Plugins
 
@@ -84,12 +84,12 @@ This is the actionable checklist to review a WordPress theme on [WordPress.org](
 ## Screenshot
 
 - [ ] Screenshot.png should be of the actual theme as it appears with default options, not a logo or mockup.
-- [ ] The screenshot.png should be no bigger than 880x 660px.
+- [ ] The screenshot.png should be no bigger than 880 x 660px.
 
 ## Security and Privacy
 
-- [ ] Don’t phone home without informed user consent. Find out more about security here.
-- [ ] Make any collection of user data ‘opt-in’ only and have a theme option that is set to disabled by default.Validate and sanitze untrusted data before entering into the database. All untrusted data should be escaped before output. (see: Data Validation)
+- [ ] Don’t phone home without informed user consent. Find out more about [security](https://make.wordpress.org/themes/handbook/review/recommended/security-and-privacy/) here.
+- [ ] Make any collection of user data ‘opt-in’ only and have a theme option that is set to disabled by default.Validate and sanitze untrusted data before entering into the database. All untrusted data should be escaped before output. (see: [Data Validation](https://codex.wordpress.org/Data_Validation))
 - [ ] No url shorteners used in the theme.
 - [ ] Use `esc_attr()` for text inputs and `esc_textarea()` for textareas.
 
@@ -109,6 +109,6 @@ This is the actionable checklist to review a WordPress theme on [WordPress.org](
 
 ## Templates
 
-If using templates, custom template files should be called using get_template_part() or locate_template().
-There are several template specific things you should consider when certain ones are being used.
+If using templates, custom template files should be called using [get_template_part()](https://developer.wordpress.org/reference/functions/get_template_part/) or locate_template().
+There are several [template specific things](https://make.wordpress.org/themes/handbook/review/recommended/templates/) you should consider when certain ones are being used.
 Use *_url() template tags, rather than bloginfo() equivalents.
