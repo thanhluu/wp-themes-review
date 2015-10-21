@@ -2,9 +2,10 @@
 This is the actionable checklist to review a WordPress theme on [WordPress.org](https://wordpress.org/)
 
 ## Getting Started
-- [ ] Join [WordPress Slack](http://chat.wordpress.org/), then join the theme review team in #themereview
-- [ ] Subscribe to [Theme Review Team Updates](https://make.wordpress.org/themes)
-- [ ] [Request a Theme](https://make.wordpress.org/themes/) to review
+- [ ] Did you join [WordPress Slack](http://chat.wordpress.org/)
+- [ ] Did you join the theme review team in #themereview
+- [ ] Did you subscribe to [Theme Review Team Updates](https://make.wordpress.org/themes)
+- [ ] Did you [Request a Theme](https://make.wordpress.org/themes/) to review
 
 ## Internal Setup
 - [ ] [Install a WordPress site for testing](https://make.wordpress.org/meta/handbook/about/get-involved/setting-up-your-machine)
